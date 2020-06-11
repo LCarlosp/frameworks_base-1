@@ -5090,6 +5090,11 @@ public final class Settings {
         public static final String SENSOR_BLOCKED_APP = "sensor_blocked_app";
         public static final String SENSOR_BLOCKED_APP_DUMMY = "sensor_blocked_app_dummy";
 
+        /**
+         * Holds current enabled volume panel implementation
+         * @hide
+         */
+        public static final String SYSTEMUI_PLUGIN_VOLUME = "systemui_plugin_volume";
 
         /**
          * These are all public system settings
@@ -5211,6 +5216,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(APP_LOCK_LOCK_AFTER);
             PRIVATE_SETTINGS.add(SHOW_VOLTE_ICON);
             PRIVATE_SETTINGS.add(VOLTE_ICON_STYLE);
+            PRIVATE_SETTINGS.add(SYSTEMUI_PLUGIN_VOLUME);
         }
 
         /**
