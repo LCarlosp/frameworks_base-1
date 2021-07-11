@@ -5028,6 +5028,12 @@ public final class Settings {
         public static final String OVERLAY_EXTRAS_ICONS = "overlay_extras_icons";
 
         /**
+         * Battery saver profiles
+         * @hide
+         */
+        public static final String POWER_PROFILE_TYPE = "power_profile_type";
+
+        /**
          * Whether to show VoLTE icon or not
          * @hide
          */
