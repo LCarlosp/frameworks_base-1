@@ -4818,6 +4818,12 @@ public final class Settings {
          */
         public static final String THREE_FINGER_GESTURE = "three_finger_gesture";
 
+        /**
+         * Monet xd
+         * @hide
+         */
+        public static final String MONET_TOGGLE = "monet_toggle";
+
 
         /**
          * IMPORTANT: If you add a new public settings you also have to add it to
