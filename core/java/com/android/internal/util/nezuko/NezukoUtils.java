@@ -31,6 +31,7 @@ import android.os.SystemProperties;
 import android.text.format.Time;
 import android.os.PowerManager;
 import android.os.SystemClock;
+import android.util.TypedValue;
 
 import com.android.internal.R;
 
@@ -83,6 +84,12 @@ public class NezukoUtils {
         // Use boolean to determine celsius or fahrenheit
         return String.valueOf((n - c) % 2 == 0 ? (int) temp :
                 ForC ? c * 9/5 + 32 + "°F" :c + "°C");
+    }
+
+    public static int getThemeAccentColor (final Context context) {
+        final TypedValue value = new TypedValue ();
+        context.getTheme ().resolveAttribute (android.R.attr.colorAccent, value, true);
+        return value.data;
     }
 
 }
