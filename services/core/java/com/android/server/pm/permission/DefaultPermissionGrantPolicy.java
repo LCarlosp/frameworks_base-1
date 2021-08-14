@@ -955,7 +955,7 @@ public final class DefaultPermissionGrantPolicy {
         grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.markup", userId, STORAGE_PERMISSIONS);
 
         // Radiant Extras
-        grantSystemFixedPermissionsToSystemPackage(pm,"com.maitreya.nezukoextras", userId, READ_STORAGE_PERMISSIONS);
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.maitreya.nezukoextras", userId, STORAGE_PERMISSIONS);
 
 
         // Google Photos
