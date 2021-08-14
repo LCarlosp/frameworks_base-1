@@ -203,6 +203,11 @@ public final class DefaultPermissionGrantPolicy {
         STORAGE_PERMISSIONS.add(Manifest.permission.ACCESS_MEDIA_LOCATION);
     }
 
+    private static final Set<String> READ_STORAGE_PERMISSIONS = new ArraySet<>();
+    static {
+        STORAGE_PERMISSIONS.add(Manifest.permission.READ_EXTERNAL_STORAGE);
+    }
+
     private static final Set<String> WALLPAPER_PERMISSIONS = new ArraySet<>();
     static {
         WALLPAPER_PERMISSIONS.add(Manifest.permission.BIND_WALLPAPER);
@@ -948,6 +953,10 @@ public final class DefaultPermissionGrantPolicy {
 
         // Google Markup
         grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.markup", userId, STORAGE_PERMISSIONS);
+
+        // Radiant Extras
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.maitreya.nezukoextras", userId, READ_STORAGE_PERMISSIONS);
+
 
         // Google Photos
         grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.apps.photos", userId, CONTACTS_PERMISSIONS,
