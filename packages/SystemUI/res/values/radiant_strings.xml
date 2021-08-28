@@ -61,6 +61,9 @@
     <string name="qs_data_switch_changed_1">Using SIM 1 for Mobile data</string>
     <string name="qs_data_switch_changed_2">Using SIM 2 for Mobile data</string>
 
+    <!-- Factory Reset tile -->
+    <string name="quick_settings_factreset_label">Factory Reset</string>
+
     <!-- Daily data usage -->
     <string name="daily_data_usage_title">Today\'s usage</string>
 
