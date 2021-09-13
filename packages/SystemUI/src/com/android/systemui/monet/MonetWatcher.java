@@ -28,7 +28,6 @@ public class MonetWatcher {
     private static int fallbackColor = 0xFFFF4081;
     private IOverlayManager mOverlayManager;
     private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
-    colorgiber cg = new colorgiber();
 
     private boolean isMonetEnabled(Context context) {
         return Settings.System.getInt(context.getContentResolver(),
@@ -45,6 +44,7 @@ public class MonetWatcher {
     }
 
     private void update(Context context) {
+        colorgiber cg = new colorgiber(context);
         String hexColorXD = String.format("%08x", (0xFFFFFFFF & cg.noSysPriviledgeMoment(1, 5, context)));
         int wallColor = cg.noSysPriviledgeMoment(1, 5, context);
         System.putIntForUser(context.getContentResolver(),System.ACCENT_COLOR, wallColor, UserHandle.USER_CURRENT);
